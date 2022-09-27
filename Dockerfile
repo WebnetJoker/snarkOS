@@ -2,7 +2,7 @@ FROM ubuntu:18.04 AS builder
 ENV RUSTUP_HOME=/usr/local/rustup \
     CARGO_HOME=/usr/local/cargo \
     PATH=/usr/local/cargo/bin:$PATH \
-    DEBIAN_FRONTEND=noninteractive
+    
 RUN set -eux ; \
     apt-get update -y && \
     apt-get dist-upgrade -y && \
